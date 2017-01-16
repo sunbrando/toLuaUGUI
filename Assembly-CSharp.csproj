@@ -38,10 +38,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>G:/Unity5.2.3/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>G:/Unity5.2.3/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>E:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -127,45 +127,6 @@
      <Compile Include="Assets\LuaFramework\ToLua\Core\ObjectTranslator.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Core\ToLua.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Core\TypeChecker.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\01_HelloWorld\HelloWorld.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\02_ScriptsFromFile\ScriptsFromFile.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\03_CallLuaFunction\CallLuaFunction.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\04_AccessingLuaVariables\AccessingLuaVariables.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\05_LuaCoroutine\TestCoroutine.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\06_LuaCoroutine2\TestCoroutine2.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\07_LuaThread\TestLuaThread.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\08_AccessingArray\AccessingArray.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\09_Dictionary\System_Collections_Generic_Dictionary_int_TestAccountWrap.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\09_Dictionary\System_Collections_Generic_Dictionary_int_TestAccount_KeyCollectionWrap.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\09_Dictionary\System_Collections_Generic_Dictionary_int_TestAccount_ValueCollectionWrap.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\09_Dictionary\System_Collections_Generic_KeyValuePair_int_TestAccountWrap.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\09_Dictionary\TestAccountWrap.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\09_Dictionary\UseDictionary.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\10_Enum\AccessingEnum.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\11_Delegate\TestDelegate.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\11_Delegate\TestEventListener.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\11_Delegate\TestEventListenerWrap.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\12_GameObject\TestGameObject.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\13_CustomLoader\TestCustomLoader.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\14_Out\TestOutArg.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\15_ProtoBuffer\TestProtoBuffer.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\15_ProtoBuffer\TestProtol.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\15_ProtoBuffer\TestProtolWrap.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\16_Int64\TestInt64.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\17_Inherit\TestInherit.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\18_Bundle\TestABLoader.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\19_cjson\TestCJson.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\20_utf8\TestUTF8.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\21_String\TestString.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\22_Reflection\TestReflection.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\23_List\UseList.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\Performance\TestPerformance.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\TestErrorStack\TestInstantiate.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\TestErrorStack\TestInstantiate2.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\TestErrorStack\TestLuaStack.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\TestOverload\TestExportWrap.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\TestOverload\TestExport_SpaceWrap.cs" />
-     <Compile Include="Assets\LuaFramework\ToLua\Examples\TestOverload\TestOverload.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Misc\LuaClient.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Misc\LuaCoroutine.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Misc\LuaLooper.cs" />
@@ -257,19 +218,19 @@
      <None Include="Assets\LuaFramework\ToLua\readme.txt" />
      <None Include="Assets\StreamingAssets\files.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>G:/Unity5.2.3/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>G:/Unity5.2.3/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="Debugger">
- <HintPath>G:/Unity Project/toLuaUGUI/Assets/Plugins/Debugger.dll</HintPath>
+ <HintPath>E:/toLuaUGUI/Assets/Plugins/Debugger.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
- <HintPath>G:/Unity5.2.3/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ <HintPath>E:/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>G:/Unity5.2.3/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ <HintPath>E:/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
