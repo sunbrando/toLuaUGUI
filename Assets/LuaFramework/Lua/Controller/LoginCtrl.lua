@@ -1,9 +1,5 @@
-local M = {}
-
---构建函数--
-function M:New()
-	return self;
-end
+local ControllerBase = require('Common.Base.ControllerBase')
+local M = class(..., ControllerBase)
 
 function M:Open()
     ViewManager.PushView(ModuleName.Login)
@@ -12,20 +8,15 @@ end
 --启动事件--
 function M:OnEnter(view)
 	self.view = view
-	self.luaBehaviour = self.view.transform:GetComponent('LuaBehaviour');
-
-	self.luaBehaviour:AddClick(self.view.btnOpen, handler(self, self.OnClick));
+	self:UpdateView()
 end
 
---单击事件--
-function M:OnClick(go)
-	CtrlManager.GetCtrl(ModuleName.Prompt):Open();
-    self.Close()
+--登录界面更新--
+function M:UpdateView()
+    if self.view ~= nil then
+        self.view:Update()
+    end
 end
 
---关闭事件--
-function M:Close()
-	ViewManager.PopView(ModuleName.Login)
-end
 
 return M

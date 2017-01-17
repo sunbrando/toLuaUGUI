@@ -5,16 +5,16 @@ AssetBundleManifest:
       Name: lua/lua_cjson.unity3d
       Dependencies: {}
     Info_1:
-      Name: lua/lua_common.unity3d
-      Dependencies: {}
-    Info_2:
       Name: lua/lua_controller.unity3d
       Dependencies: {}
-    Info_3:
+    Info_2:
       Name: lua/lua_logic.unity3d
       Dependencies: {}
-    Info_4:
+    Info_3:
       Name: lua/lua_lpeg.unity3d
+      Dependencies: {}
+    Info_4:
+      Name: lua/lua_manager.unity3d
       Dependencies: {}
     Info_5:
       Name: lua/lua_misc.unity3d
@@ -50,27 +50,29 @@ AssetBundleManifest:
       Name: lua/lua_3rd_sproto.unity3d
       Dependencies: {}
     Info_16:
-      Name: lua/lua_system_reflection.unity3d
+      Name: lua/lua_common_base.unity3d
       Dependencies: {}
     Info_17:
-      Name: lua/lua.unity3d
+      Name: lua/lua_common_utils.unity3d
       Dependencies: {}
     Info_18:
+      Name: lua/lua_system_reflection.unity3d
+      Dependencies: {}
+    Info_19:
+      Name: lua/lua.unity3d
+      Dependencies: {}
+    Info_20:
       Name: prompt.unity3d
       Dependencies:
         Dependency_0: prompt_asset.unity3d
         Dependency_1: shared_asset.unity3d
-    Info_19:
+    Info_21:
       Name: login.unity3d
       Dependencies:
         Dependency_0: shared_asset.unity3d
-    Info_20:
-      Name: message.unity3d
-      Dependencies:
-        Dependency_0: shared_asset.unity3d
-    Info_21:
+    Info_22:
       Name: prompt_asset.unity3d
       Dependencies: {}
-    Info_22:
+    Info_23:
       Name: shared_asset.unity3d
       Dependencies: {}

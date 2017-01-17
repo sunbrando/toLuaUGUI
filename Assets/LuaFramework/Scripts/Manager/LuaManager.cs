@@ -88,8 +88,10 @@ namespace LuaFramework {
                 loader.AddBundle("lua/lua_system.unity3d");
                 loader.AddBundle("lua/lua_system_reflection.unity3d");
                 loader.AddBundle("lua/lua_unityengine.unity3d");
-                loader.AddBundle("lua/lua_common.unity3d");
+                loader.AddBundle("lua/lua_common_base.unity3d");
+                loader.AddBundle("lua/lua_common_utils.unity3d");
                 loader.AddBundle("lua/lua_logic.unity3d");
+                loader.AddBundle("lua/lua_manager.unity3d");
                 loader.AddBundle("lua/lua_view.unity3d");
                 loader.AddBundle("lua/lua_controller.unity3d");
                 loader.AddBundle("lua/lua_misc.unity3d");

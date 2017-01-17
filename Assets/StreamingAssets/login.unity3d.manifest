@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2998481524
+CRC: 866610884
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 800ccd97a160685a24a553307db4e595
+    Hash: 30cb2b3247818aa2dfb7a70428453e76
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4f582e19edaea9a6e97feafac53fcb94
@@ -34,6 +34,6 @@ ClassTypes:
 - Class: 224
   Script: {instanceID: 0}
 Assets:
-- Assets/LuaFramework/Examples/Builds/Login/LoginPanel.prefab
+- Assets/LuaFramework/Examples/Builds/Login/LoginView.prefab
 Dependencies:
 - Assets/StreamingAssets/shared_asset.unity3d

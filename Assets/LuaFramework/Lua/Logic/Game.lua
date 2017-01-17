@@ -24,8 +24,6 @@ function Game.OnInitOK()
     AppConst.SocketPort = 2012;
     AppConst.SocketAddress = "127.0.0.1";
     networkMgr:SendConnect();
-
-    CtrlManager.Init();
     
     if AppConst.ExampleMode == 1 then
         CtrlManager.GetCtrl(ModuleName.Login):Open();
