@@ -17,7 +17,7 @@ end
 
 --刷新界面--
 function M:Update()
-	logWarn(">>>>>>>>>>>>>>>>>>>> Update");
+	logWarn(">>>>>>>>>>>>>>>>>>>> Update xxx2");
 end
 
 --关闭事件--

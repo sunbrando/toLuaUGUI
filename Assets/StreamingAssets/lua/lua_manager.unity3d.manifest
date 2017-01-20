@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2526373980
+CRC: 2591164330
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2267d4eef92bf814e385e22235273318
+    Hash: 4d2be622a7de1bf2c1c539e7c636e162
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1033bf7ddfd4c6d43e7a6382c0a0a61a
@@ -13,7 +13,7 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/Lua/Manager/ViewManager.lua.bytes
-- Assets/Lua/Manager/CtrlManager.lua.bytes
-- Assets/Lua/Manager/ModuleName.lua.bytes
 - Assets/Lua/Manager/Init.lua.bytes
+- Assets/Lua/Manager/ModuleName.lua.bytes
+- Assets/Lua/Manager/CtrlManager.lua.bytes
 Dependencies: []

@@ -81,7 +81,6 @@
      <Compile Include="Assets\LuaFramework\Scripts\Network\SocketClient.cs" />
      <Compile Include="Assets\LuaFramework\Scripts\ObjectPool\GameObjectPool.cs" />
      <Compile Include="Assets\LuaFramework\Scripts\ObjectPool\ObjectPool.cs" />
-     <Compile Include="Assets\LuaFramework\Scripts\ObjectPool\TestObjectClass.cs" />
      <Compile Include="Assets\LuaFramework\Scripts\Utility\LuaHelper.cs" />
      <Compile Include="Assets\LuaFramework\Scripts\Utility\Util.cs" />
      <Compile Include="Assets\LuaFramework\Scripts\View\AppView.cs" />
@@ -215,8 +214,8 @@
      <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WrapModeWrap.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\ViewWrap.cs" />
      <Compile Include="Assets\LuaFramework\ToLua\Source\LuaConst.cs" />
-     <None Include="Assets\LuaFramework\ToLua\readme.txt" />
      <None Include="Assets\StreamingAssets\files.txt" />
+     <None Include="Assets\LuaFramework\ToLua\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

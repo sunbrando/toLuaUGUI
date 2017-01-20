@@ -52,6 +52,7 @@ namespace LuaInterface
         public bool beZip = false;
         protected List<string> searchPaths = new List<string>();
         protected Dictionary<string, AssetBundle> zipMap = new Dictionary<string, AssetBundle>();
+        private AssetBundle luaBundle = null;
 
         protected static LuaFileUtils instance = null;
 
@@ -128,6 +129,11 @@ namespace LuaInterface
         public void AddSearchBundle(string name, AssetBundle bundle)
         {
             zipMap[name] = bundle;            
+        }
+
+        public void AddSearchBundle(AssetBundle bundle)
+        {
+            this.luaBundle = bundle;
         }
 
         public string FindFile(string fileName)
@@ -236,36 +242,19 @@ namespace LuaInterface
 
         byte[] ReadZipFile(string fileName)
         {
-            AssetBundle zipFile = null;
             byte[] buffer = null;
-            string zipName = null;
-            StringBuilder sb = StringBuilderCache.Acquire();
-            sb.Append("lua");
-            int pos = fileName.LastIndexOf('/');
 
-            if (pos > 0)
+            if (this.luaBundle != null)
             {
-                sb.Append("_");
-                sb.Append(fileName.Substring(0, pos).ToLower());        //shit, unity5 assetbund'name must lower
-                sb.Replace('/', '_');                
-                fileName = fileName.Substring(pos + 1);
-            }
-
-            if (!fileName.EndsWith(".lua"))
-            {
-                fileName += ".lua";
-            }
 
 #if UNITY_5
-            fileName += ".bytes";
-#endif
-            zipName = StringBuilderCache.GetStringAndRelease(sb);
-            zipMap.TryGetValue(zipName, out zipFile);
+                if (fileName.EndsWith(".lua"))
+                    fileName = fileName.Substring(0, fileName.Length - 4);
 
-            if (zipFile != null)
-            {
-#if UNITY_5
-                TextAsset luaCode = zipFile.LoadAsset<TextAsset>(fileName);
+                StringBuilder sb = StringBuilderCache.Acquire();
+                sb.AppendFormat("Assets/LuaFramework/{0}{1}.lua.bytes", LuaFramework.AppConst.LuaTempDir, fileName.Replace('.', '/'));
+
+                TextAsset luaCode = this.luaBundle.LoadAsset<TextAsset>(StringBuilderCache.GetStringAndRelease(sb));
 #else
                 TextAsset luaCode = zipFile.Load(fileName, typeof(TextAsset)) as TextAsset;
 #endif
