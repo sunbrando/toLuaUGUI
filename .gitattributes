@@ -3,6 +3,9 @@
 
 # Custom for Visual Studio
 *.cs     diff=csharp
+*.csproj
+*.sln
+*.suo
 
 # Standard to msysgit
 *.doc	 diff=astextplain
@@ -15,3 +18,8 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+# Unity
+*.meta
+/Temp/
+/Library/
